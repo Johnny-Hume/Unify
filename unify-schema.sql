@@ -190,7 +190,7 @@ CREATE TABLE IF NOT EXISTS `StudentHobby` (
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `OrganisationTag` (
   `Organisation` INT NOT NULL,
-  `Tag` INT NOT NULL,
+  `Tag` BIGINT NOT NULL,
   FOREIGN KEY (`Organisation`)
   REFERENCES Organisation(`ID`)
   ON DELETE CASCADE
